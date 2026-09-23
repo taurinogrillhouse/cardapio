@@ -470,6 +470,7 @@
     <button class="nav-btn" onclick="goTo('chopps-cervejas',this)">Cervejas</button>
     <button class="nav-btn" onclick="goTo('destilados',this)">Destilados</button>
     <button class="nav-btn" onclick="goTo('nao-alcoolicos',this)">Não Alcoólicos</button>
+    <button class="nav-btn" onclick="goTo('itens',this)">Itens</button>
   </div>
 </div>
 
@@ -1195,6 +1196,25 @@
   </div>
 </section>
 
+<div class="ornament"><span class="ornament-line"></span><span class="ornament-symbol">✦</span><span class="ornament-line"></span></div>
+
+<!-- ════════════════════════════════════════
+     ITENS
+════════════════════════════════════════ -->
+<section id="itens" class="menu-section">
+  <div class="section-header reveal">
+    <span class="section-title">Itens</span>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="card reveal">
+    <div class="card-top">
+      <div class="card-name">Embalagem para Viagem</div>
+      <span class="card-price">R$3,50</span>
+    </div>
+  </div>
+</section>
+
 <!-- ════════ FOOTER ════════ -->
 
 
@@ -1240,7 +1260,7 @@ function goTo(id, btn){
 const sections=[
   {id:'petiscos',btn:0},{id:'porcoes',btn:1},{id:'pratos',btn:2},
   {id:'hamburgueres',btn:3},{id:'sobremesas',btn:4},
-  {id:'drinks-autorais',btn:5},{id:'drinks-classicos',btn:6},{id:'vinhos',btn:7},{id:'chopps-cervejas',btn:8},{id:'destilados',btn:9},{id:'nao-alcoolicos',btn:10}
+  {id:'drinks-autorais',btn:5},{id:'drinks-classicos',btn:6},{id:'vinhos',btn:7},{id:'chopps-cervejas',btn:8},{id:'destilados',btn:9},{id:'nao-alcoolicos',btn:10},{id:'itens',btn:11}
 ];
 const navBtns=document.querySelectorAll('.nav-btn');
 const secObserver=new IntersectionObserver((entries)=>{
